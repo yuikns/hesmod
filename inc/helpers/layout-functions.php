@@ -154,11 +154,11 @@ if ( ! function_exists( 'hestia_comments_list' ) ) {
 				id="comment-<?php comment_ID(); ?>">
 			<?php if ( $args['type'] != 'pings' ) : ?>
 				<?php
-				$comment_author_link = esc_url( get_comment_author_url( $comment ) );
+				$comment_author_url = esc_url( get_comment_author_url( $comment ) );
 				?>
 				<a class="pull-left" 
-					<?php if (strlen($comment_author_link) > 0) : ?>
-					href="<?php echo $comment_author_link ; ?>" rel="nofollow"
+					<?php if (strlen($comment_author_url) > 0) : ?>
+					href="<?php echo $comment_author_url ; ?>" rel="nofollow"
 					<?php endif; ?>
 					>
 					<div class="comment-author avatar vcard">
