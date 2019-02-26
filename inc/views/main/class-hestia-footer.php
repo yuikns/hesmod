@@ -142,7 +142,7 @@ class Hestia_Footer extends Hestia_Abstract_Main {
 					'<a href="%1$s" rel="nofollow">%2$s</a>',
 					esc_url( __( 'https://blog.argcv.com', 'hestia' ) ),
 					'ArgCV'
-				),
+				)
 			)
 		);
 
