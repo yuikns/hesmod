@@ -13,6 +13,7 @@ class Hestia_Upsell_Manager extends Hestia_Register_Customizer_Controls {
 	 * Add the controls.
 	 */
 	public function add_controls() {
+		return ;
 		$this->register_type( 'Hestia_Section_Upsell', 'section' );
 		$this->register_type( 'Hestia_Control_Upsell', 'control' );
 		$this->add_main_upsell();
@@ -36,6 +37,7 @@ class Hestia_Upsell_Manager extends Hestia_Register_Customizer_Controls {
 	 * Adds main
 	 */
 	private function add_main_upsell() {
+
 		$this->add_section(
 			new Hestia_Customizer_Section(
 				'hestia_upsell_main_section',

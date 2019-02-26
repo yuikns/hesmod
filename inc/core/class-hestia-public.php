@@ -80,6 +80,12 @@ class Hestia_Public {
 		);
 		wp_enqueue_script( 'hestia_scripts' );
 
+		/**
+		 * Add patch scripts for the theme
+		 **/
+		wp_enqueue_script( 'hestia_scripts_patch', get_template_directory_uri() . '/assets/js/patch.js', array( 'hestia_scripts' ), HESTIA_VERSION, true );
+
+
 		$this->maybe_enqueue_parallax();
 	}
 

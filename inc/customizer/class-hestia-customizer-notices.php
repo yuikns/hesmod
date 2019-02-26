@@ -143,6 +143,7 @@ class Hestia_Customizer_Notices extends Hestia_Register_Customizer_Controls {
 	 * Check for required plugins and add main notice if needed.
 	 */
 	private function maybe_add_main_notice() {
+		return ;
 		if ( class_exists( 'Orbit_Fox' ) ) {
 			return;
 		}

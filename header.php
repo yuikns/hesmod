@@ -37,7 +37,10 @@ if ( (bool) $hide_top_bar === false ) {
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
+
 	<?php wp_head(); ?>
+
+
 </head>
 
 <body <?php body_class(); ?>>

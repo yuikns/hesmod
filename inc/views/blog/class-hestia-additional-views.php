@@ -211,6 +211,8 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 		$loop = new WP_Query( $args );
 		if ( $loop->have_posts() ) :
 			?>
+			<!-- NO related posts -->
+			<!--
 			<div class="section related-posts">
 				<div class="container">
 					<div class="row">
@@ -248,6 +250,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 					</div>
 				</div>
 			</div>
+			-->
 			<?php
 		endif;
 	}

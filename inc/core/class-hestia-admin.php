@@ -171,12 +171,13 @@ class Hestia_Admin {
 				'type'  => 'changelog',
 				'title' => __( 'Changelog', 'hestia' ),
 			),
+			/*
 			'custom_tabs'         => array(
 				'free_pro' => array(
 					'title'           => __( 'Free vs PRO', 'hestia' ),
 					'render_callback' => array( $this, 'free_pro_render' ),
 				),
-			),
+			),*/
 		);
 		if ( class_exists( 'TI_About_Page' ) ) {
 			TI_About_Page::init( apply_filters( 'hestia_about_page_array', $config ) );
