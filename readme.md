@@ -12,6 +12,7 @@ HesMod reserved its Material Kit, and modified some of the assertions to make it
 ## Copyright
 
 Hestia WordPress theme, Copyright 2018 Themeisle
+
 Hestia is distributed under the terms of the GNU GPLv2 or later
 
 
