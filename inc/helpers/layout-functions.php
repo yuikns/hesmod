@@ -153,7 +153,14 @@ if ( ! function_exists( 'hestia_comments_list' ) ) {
 		<div <?php comment_class( empty( $args['has_children'] ) ? 'media' : 'parent media' ); ?>
 				id="comment-<?php comment_ID(); ?>">
 			<?php if ( $args['type'] != 'pings' ) : ?>
-				<a class="pull-left" href="<?php echo esc_url( get_comment_author_url( $comment ) ); ?> ">
+				<?php
+				$author_link = esc_url( get_comment_author_url( $comment ) );
+				?>
+				<a class="pull-left" 
+					<?php if (strlen($author_link) > 0) : ?>
+					href="<?php echo $author_link ; ?>" rel="nofollow"
+					<?php endif; ?>
+					>
 					<div class="comment-author avatar vcard">
 						<?php
 						if ( $args['avatar_size'] != 0 ) {
