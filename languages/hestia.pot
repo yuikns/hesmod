@@ -2275,7 +2275,7 @@ msgstr ""
 
 #: inc/views/main/class-hestia-footer.php:133
 #. translators: %1$s is Theme Name, %2$s is WordPress
-msgid "%1$s | Developed by %2$s"
+msgid "%1$s | Developed by %2$s, Revised by %3$s"
 msgstr ""
 
 #. Author URI of the plugin/theme
