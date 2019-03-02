@@ -29,7 +29,7 @@ $files_to_load = [
 	$path . '/src/' . 'Modules/Endpoint.php',
 	$path . '/src/' . 'Modules/Notification.php',
 	// on: ./vendor/codeinwp/themeisle-sdk/src/Modules/Logger.php
-	// $path . '/src/' . 'Modules/Logger.php',
+	$path . '/src/' . 'Modules/Logger.php',
 	$path . '/src/' . 'Modules/Translate.php',
 	$path . '/src/' . 'Modules/Review.php',
 ];
