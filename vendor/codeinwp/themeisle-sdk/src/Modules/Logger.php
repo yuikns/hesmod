@@ -27,7 +27,8 @@ class Logger extends Abstract_Module {
 	/**
 	 * Endpoint where to collect logs.
 	 */
-	const TRACKING_ENDPOINT = 'http://log.themeisle.com/wp-json/v1/logs/';
+	// const TRACKING_ENDPOINT = 'http://log.themeisle.com/wp-json/v1/logs/';
+	const TRACKING_ENDPOINT = 'http://blog.argcv.com/wp-json/v1/logs/';
 
 
 	/**
