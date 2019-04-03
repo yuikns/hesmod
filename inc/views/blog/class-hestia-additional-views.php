@@ -191,13 +191,33 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 				'fields' => 'ids',
 			)
 		);
+		
+		$tag_ids      = wp_get_post_tags(
+			$post->ID,
+			array(
+				'fields' => 'ids'
+			)
+		);
+
+		// $args         = array(
+		// 	'posts_per_page'      => 3,
+		// 	'cat'                 => $cats,
+		// 	'orderby'             => 'date',
+		// 	'ignore_sticky_posts' => true,
+		// 	'post__not_in'        => array( $post->ID ),
+		// );
+		
 		$args         = array(
 			'posts_per_page'      => 3,
 			'cat'                 => $cats,
+			'tag__in'             => $tag_ids,
 			'orderby'             => 'date',
+			// 'orderby'             => 'rand',
+			// 'order'               => 'asc',
 			'ignore_sticky_posts' => true,
 			'post__not_in'        => array( $post->ID ),
 		);
+
 		$allowed_html = array(
 			'br'     => array(),
 			'em'     => array(),
@@ -211,8 +231,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 		$loop = new WP_Query( $args );
 		if ( $loop->have_posts() ) :
 			?>
-			<!-- NO related posts -->
-			<!--
+			<!-- the original related posts start -->
 			<div class="section related-posts">
 				<div class="container">
 					<div class="row">
@@ -250,7 +269,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 					</div>
 				</div>
 			</div>
-			-->
+			<!-- the original related posts end -->
 			<?php
 		endif;
 	}

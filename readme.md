@@ -18,3 +18,13 @@ Hestia is distributed under the terms of the GNU GPLv2 or later
 
 [link-hestia]: https://wordpress.org/themes/hestia/
 [link-themeisle]: https://profiles.wordpress.org/themeisle
+
+
+## Marks
+
++ Related Posts: see `inc/views/blog/class-hestia-additional-views.php`, and search `section related-posts`.
++ Credits in Footer: see `inc/views/main/class-hestia-footer.php`, and search `hestia_general_credits`. You should also edit `inc/views/main/class-hestia-footer.php` and edit the corresponding messages.
+
+
+
+
