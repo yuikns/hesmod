@@ -250,6 +250,15 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 														<?php the_post_thumbnail( 'hestia-blog' ); ?>
 													</a>
 												</div>
+											<?php else : ?>
+												<div class="card-image">
+													<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+														<?php the_post_thumbnail( 'hestia-blog' ); ?>
+														<?php
+														 echo '<img src="'.get_bloginfo("template_url").'/assets/img/about.jpg" />';
+														?>
+													</a>
+												</div>
 											<?php endif; ?>
 											<div class="content">
 												<h6 class="category text-info"><?php echo hestia_category( false ); ?></h6>
