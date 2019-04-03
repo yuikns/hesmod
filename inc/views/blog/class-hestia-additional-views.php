@@ -253,7 +253,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 											<?php else : ?>
 												<div class="card-image">
 													<div style="height:200px;width:100%;background-color:white;background-image:url('<?php echo get_bloginfo("template_url"); ?>/assets/img/about.jpg');background-repeat: no-repeat;background-size:cover;background-position:center center" >
-
+														<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="display:block;height:100%">
 													</div>
 
 												</div>
