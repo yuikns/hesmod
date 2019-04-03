@@ -255,7 +255,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 													<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 														<?php the_post_thumbnail( 'hestia-blog' ); ?>
 														<?php
-														 echo '<img src="'.get_bloginfo("template_url").'/assets/img/about.jpg" />';
+														 echo '<div style="height:0;width:100%;background-color:white;background-image:url(\''.get_bloginfo("template_url").'/assets/img/about.jpg)\');background-repeat: no-repeat;background-size:cover;background-position:center center" />';
 														?>
 													</a>
 												</div>
