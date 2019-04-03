@@ -253,7 +253,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 											<?php else : ?>
 												<div class="card-image">
 													<?php
-													 echo '<div onclick="window.open(\''.the_permalink().'\');" style="cursor: pointer;height:200px;width:100%;background-color:white;background-image:url(\''.get_bloginfo("template_url").'/assets/img/about.jpg\');background-repeat: no-repeat;background-size:cover;background-position:center center" ></div>';
+													 echo '<div onclick="location.href=\''.the_permalink().'\';" style="cursor: pointer;height:200px;width:100%;background-color:white;background-image:url(\''.get_bloginfo("template_url").'/assets/img/about.jpg\');background-repeat: no-repeat;background-size:cover;background-position:center center" ></div>';
 													?>
 
 												</div>
