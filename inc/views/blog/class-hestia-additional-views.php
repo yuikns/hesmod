@@ -246,20 +246,20 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 										<div class="card card-blog">
 											<?php if ( has_post_thumbnail() ) : ?>
 												<div class="card-image">
-													<!-- 
+
 													<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-														<?php the_post_thumbnail( 'hestia-blog' ); ?>
+														<div style="height:0;width:100%;padding-bottom:100%;background-color:white;background-image:url('<?php the_post_thumbnail_url( 'hestia-blog' ); ?>');background-repeat: no-repeat;background-size:cover;background-position:center center" >
+														</div>
 													</a>
-													-->
-													<div style="height:0;width:100%;padding-bottom:100%;background-color:white;background-image:url('<?php the_post_thumbnail_url( 'hestia-blog' ); ?>');background-repeat: no-repeat;background-size:cover;background-position:center center" >
-														<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="display:block;height:100%"></a>
-													</div>
 												</div>
 											<?php else : ?>
 												<div class="card-image">
-													<div style="height:0;width:100%;padding-bottom:100%;background-color:white;background-image:url('<?php echo get_bloginfo("template_url"); ?>/assets/img/about.jpg');background-repeat: no-repeat;background-size:cover;background-position:center center" >
-														<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" style="display:block;height:100%"></a>
-													</div>
+
+													<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+														<div style="height:0;width:100%;padding-bottom:100%;background-color:white;background-image:url('<?php echo get_bloginfo("template_url"); ?>/assets/img/about.jpg');background-repeat: no-repeat;background-size:cover;background-position:center center" >
+														</div>
+													</a>
+
 												</div>
 											<?php endif; ?>
 											<div class="content">
