@@ -211,9 +211,9 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 			'posts_per_page'      => 3,
 			'cat'                 => $cats,
 			'tag__in'             => $tag_ids,
-			'orderby'             => 'date',
-			// 'orderby'             => 'rand',
-			// 'order'               => 'asc',
+			// 'orderby'             => 'date',
+			'orderby'             => 'rand',
+			'order'               => 'asc',
 			'ignore_sticky_posts' => true,
 			'post__not_in'        => array( $post->ID ),
 		);
