@@ -8346,3 +8346,9 @@ body.fl-builder-edit .navbar.header-with-topbar.navbar-default:not(.navbar-trans
     padding: 15px 0;
   }
 }
+
+/* for plugin syntaxhighlighter */
+.syntaxhighlighter td.code .container::before,
+.syntaxhighlighter td.code .container::after {
+    display: none;
+}
